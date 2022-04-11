@@ -38,7 +38,7 @@ exports.payment = async (req, res) => {
         "currency": "INR",
         "sms_notify": 1,
         "email_notify": 1,
-        "callback_url": `http://192.168.0.119:3000/api/validate?user_mobile=${mobile}`,
+        "callback_url": `https://groc-mart-backend.herokuapp.com/api/validate?user_mobile=${mobile}`,
         "callback_method": "get",
     }
     console.log(params)
